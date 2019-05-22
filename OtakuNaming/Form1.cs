@@ -208,6 +208,7 @@ namespace OtakuNaming
             if (checkM == true)
             {
                 MessageBox.Show("존재하는 날을 선택해주세요!", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                checkM = false;
             }
             else MessageBox.Show(name, "당신의 이름", MessageBoxButtons.OK, MessageBoxIcon.None);
 
