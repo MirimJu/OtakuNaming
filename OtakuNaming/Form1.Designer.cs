@@ -84,10 +84,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(63, 9);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(104, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(359, 40);
+            this.label1.Size = new System.Drawing.Size(312, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "오타쿠식 이름짓기";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
