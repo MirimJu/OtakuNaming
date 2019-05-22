@@ -194,7 +194,7 @@ namespace OtakuNaming
                 {
                     checkM = true;
                 }
-                name += " 카이토오(괴도)";
+                else name += " 카이토오(괴도)";
             }
             else if (rbD_31.Checked)
             {
@@ -205,9 +205,11 @@ namespace OtakuNaming
                       name += " 하카이샤(지배자)";
             }
 
-            if(checkM == true)
-                 MessageBox.Show("존재하는 날을 선택해주세요!", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            else MessageBox.Show(name,"당신의 이름",MessageBoxButtons.OK,MessageBoxIcon.None);
+            if (checkM == true)
+            {
+                MessageBox.Show("존재하는 날을 선택해주세요!", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else MessageBox.Show(name, "당신의 이름", MessageBoxButtons.OK, MessageBoxIcon.None);
 
         }
 
