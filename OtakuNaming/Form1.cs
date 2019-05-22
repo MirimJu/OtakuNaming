@@ -13,7 +13,7 @@ namespace OtakuNaming
     public partial class Form1 : Form
     {
         string name;
-
+        bool checkM = false;
 
         public Form1()
         {
@@ -190,14 +190,24 @@ namespace OtakuNaming
 
             else if (rbD_30.Checked)
             {
+                if (rbM_2.Checked)
+                {
+                    checkM = true;
+                }
                 name += " 카이토오(괴도)";
             }
             else if (rbD_31.Checked)
             {
-                name += " 하카이샤(지배자)";
+                if (rbM_2.Checked || rbM_4.Checked || rbM_6.Checked || rbM_9.Checked || rbM_11.Checked)
+                {
+                    checkM = true;
+                }else
+                      name += " 하카이샤(지배자)";
             }
 
-            MessageBox.Show(name,"당신의 이름",MessageBoxButtons.OK,MessageBoxIcon.None);
+            if(checkM == true)
+                 MessageBox.Show("존재하는 날을 선택해주세요!", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else MessageBox.Show(name,"당신의 이름",MessageBoxButtons.OK,MessageBoxIcon.None);
 
         }
 
