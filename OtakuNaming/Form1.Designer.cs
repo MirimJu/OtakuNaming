@@ -674,12 +674,12 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(187, 375);
+            this.button1.Font = new System.Drawing.Font("Tahoma", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(187, 344);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(323, 92);
+            this.button1.Size = new System.Drawing.Size(323, 117);
             this.button1.TabIndex = 4;
-            this.button1.Text = "이름 보기";
+            this.button1.Text = "당신의 이름은?";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -689,9 +689,8 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(181, 339);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 33);
+            this.label2.Size = new System.Drawing.Size(0, 33);
             this.label2.TabIndex = 5;
-            this.label2.Text = "당신의 이름은";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
@@ -715,6 +714,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "오타쿠식 이름 짓기";
